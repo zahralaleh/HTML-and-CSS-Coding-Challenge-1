@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #222;
+}
+
+.product {
+  width: 825px;
+  margin: 50px auto;
+  border: 4px solid #222;
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
+}
+
+.primary-heading {
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 16px;
+
+  position: relative;
+  grid-column: 1/-1;
+}
+
+.product-image {
+  height: 250px;
+}
+
+.price-shipping {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0 15px;
+}
+
+.price {
+  font-size: 24px;
+}
+
+.shipping {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #777;
+}
+
+.paragraph {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.info:link,
+.info:visited {
+  color: #222;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.info:hover,
+.info:active {
+  text-decoration: none;
+}
+
+.colors {
+  display: flex;
+  gap: 10px;
+}
+
+.color {
+  width: 22px;
+  height: 22px;
+}
+
+.color-black {
+  background-color: #000;
+}
+
+.color-blue {
+  background-color: #2f6ee2;
+}
+.color-red {
+  background-color: #ec2f2f;
+}
+.color-yellow {
+  background-color: #f0bf1e;
+}
+.color-green {
+  background-color: #90cc20;
+}
+.color-brown {
+  background-color: #885214;
+}
+/* PRODUCT DETAILS */
+
+.secondary-heading {
+  text-transform: uppercase;
+  margin: 20px 0 15px;
+}
+
+.details-list {
+  list-style: square;
+  margin-left: 20px;
+}
+
+.details-list li:first-child {
+  margin-top: 20px;
+}
+
+.details-list li {
+  margin: 10px 0;
+}
+.btn {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #222;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-top: 4px solid #222;
+  grid-column: 1/-1;
+}
+.btn:hover {
+  color: #222;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.primary-heading::before {
+  content: "sale";
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #fff;
+  background-color: #ec2f2f;
+  padding: 7px 15px;
+
+  position: absolute;
+  top: -18px;
+  left: -38px;
+}
